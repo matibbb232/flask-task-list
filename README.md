@@ -13,7 +13,7 @@ This is a simple task list application built using Python and Flask. It allows u
 1. Clone the repository:
 
     ```sh
-    git clone [https://github.com/matibbb232/flask-task-list-app.git](https://github.com/matibbb232/flask-task-list.git)
+    git clone https://github.com/matibbb232/flask-task-list.git
     ```
 
 2. Create and enter virtual environment:
