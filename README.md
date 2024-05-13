@@ -1,6 +1,6 @@
 # Simple Task List Application using Python and Flask
 
-This is a simple task list application built using Python and Flask. It allows users to create multiple task lists with different names and manage tasks for each of them. Could be used as TODO list or for tracing items. Currently, there's no authentication added, and the frontend is very basic.
+This is a simple task list application built using Python and Flask. It allows users to create multiple task lists with different names and manage tasks for each of them. Could be used as TODO list or for tracking items. Currently, there's no authentication added, and the frontend is very basic.
 
 ## Features
 
