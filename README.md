@@ -12,11 +12,18 @@ This is a simple task list application built using Python and Flask. It allows u
 
 1. Clone the repository:
 
-    <!-- ```bash
-    git clone https://github.com/matibbb232/flask-task-list-app.git
-    ``` -->
+    ```sh
+    git clone [https://github.com/matibbb232/flask-task-list-app.git](https://github.com/matibbb232/flask-task-list.git)
+    ```
 
-2. Install dependencies:
+2. Create and enter virtual environment:
+   
+    ```sh
+    virtualenv venv
+    source venv/bin/activate
+    ```
+    
+3. Install dependencies:
 
     ```sh
     pip install -r requirements.txt
