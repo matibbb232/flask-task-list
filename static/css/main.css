@@ -1,0 +1,34 @@
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.task-list {
+  width: 20em;
+  height: auto;
+  overflow: hidden;
+}
+
+table,
+th,
+td {
+  width: 90%;
+  border: 1px solid black;
+}

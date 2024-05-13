@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block head %}
+<title>Task list</title>
+{% endblock %} {% block body %}
+<div class="content">
+  <h1>Task list</h1>
+
+  <form action="/add_group" method="POST">
+    <input type="text" name="group" id="group" />
+    <input type="submit" value="Create new list" />
+  </form>
+
+  {% for group in groups %}
+  <div class="task-list">
+    <h2>
+      {{ group.group }} <a href="/delete_group/{{ group.id }}"> Delete </a>
+    </h2>
+    <table>
+      <tr>
+        <th>Task</th>
+        <th>Added</th>
+        <th>Actions</th>
+      </tr>
+      {% for task in tasks %} {% if task.group_id == group.id %}
+      <tr>
+        <td>{{ task.content }}</td>
+        <td>{{ task.date_created.date() }}</td>
+        <td>
+          <a href="/delete/{{ task.id }}"> Delete </a>
+          <br />
+          <a href="/update/{{ task.id }}"> Update </a>
+        </td>
+      </tr>
+      {% endif %} {% endfor %}
+    </table>
+    <form action="/add_task/{{ group.id }}" method="POST">
+      <input type="text" name="content" id="content" />
+      <input type="submit" value="Add Task" />
+    </form>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
